@@ -1,0 +1,427 @@
+.container {
+    /* border: 1px solid red; */
+    font-family: 'Roboto', sans-serif;
+    max-width: auto;
+    max-height: auto;
+    overflow: hidden;
+}
+
+#header {
+    font-size: 18px;
+    color: rgb(250, 74, 74);
+    margin: 10px 0px 0px 0px;
+}
+
+#title {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 25px 0px 35px 0px;
+}
+
+#button {
+    background-color:  rgb(250, 74, 74);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 2px;
+    cursor: pointer;
+    size-adjust: 100px;
+    font-weight: bold;
+    margin: 15px 0px 0px 0px;
+    width: 150px; 
+}
+
+.card {
+    /* border: 1px solid rgb(25, 204, 64); */
+    border-radius: 5px;
+    align-items: flex-start; /* Align items to the top */
+    width: auto;
+    height: auto; 
+    margin: 50px 240px 50px 240px;
+    /* display: flex; 
+    flex-direction: row; */
+    gap: 60px;
+    flex-wrap: wrap; /* Allow items to wrap if the container is too small */
+    align-items: center; /* Align items vertically centered */
+    align-content: space-between;
+    
+}
+
+/* .container {
+    position: relative;
+} */
+
+
+.modal {
+    /* border: 1px solid black; */
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 800%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 7% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%; 
+    max-width: 400px;
+    border: 20px solid  #d1d0d0;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form .form-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+form input[type="email"],
+form input[type="text"] {
+    width: 100%;
+    padding: 10px 5px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    box-sizing: border-box;
+}
+
+form input[type="email"]:focus,
+form input[type="text"]:focus {
+    border-bottom: 2px solid #ccc;;
+}
+
+form label {
+    position: absolute;
+    left: 5px;
+    bottom: 10px;
+    color: #aaa;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+form input[type="email"]:focus + label,
+form input[type="text"]:focus + label,
+form input[type="email"]:valid + label,
+form input[type="text"]:valid + label {
+    bottom: 30px;
+    font-size: 12px;
+    color:#ccc;
+    padding: 5px;
+}
+
+.name-fields {
+    display: flex;
+    gap: 10px;
+}
+
+.name-field {
+    flex: 1;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.checkbox-label input[type="checkbox"] {
+    margin-right: 20px;
+    background-color:  rgb(250, 74, 74)!important;
+    color: red;
+} 
+
+form button {
+    font-size: 18px;
+    padding: 15px;
+    background-color: rgb(250, 74, 74);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: rgb(250, 74, 74);
+}
+
+
+.content-card1 {
+    /* border: 1px solid black; */
+    max-width: 440px;
+    max-height: auto; 
+    display: flex;
+    flex-direction: column; /* Stack content items vertically */
+    flex: 1;
+    min-width: 0;
+    flex-wrap: wrap;
+    font-size: small;
+}
+.picture-card1 {
+    /* border: 1px solid black; */
+    max-width: 480px;
+    max-height: 390px; 
+    display: flex;
+    /* flex: 1 1 300px; */
+    /* margin: 0px 0px 0px 65px; */
+    max-width: 100%; /* Image scales with the width of its container */
+    height: auto;    /* Maintain aspect ratio */
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+
+.content1-card2 {
+    /* border: 1px solid black; */
+    max-width: 270px;
+    max-height: auto; 
+    margin: 50px 0px 0px 0px; 
+    display: flex;
+    flex-direction: column; /* Stack content items vertically */
+    flex-wrap: wrap;
+}
+
+.content2-card2 {
+    /* border: 1px solid black; */
+    max-width: 423px;
+    max-height: auto; 
+    margin: 50px 0px 0px 0px; 
+    display: flex;
+    flex-wrap: wrap;
+    font-size: small;
+    align-content: flex-end;
+}
+
+/* Slider Wrapper */
+.slider-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 20px auto;
+}
+
+.image-slider {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    will-change: transform;
+}
+
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.picture-card2 {
+
+    max-width: 485px;
+    max-height: 350px; 
+    width: 100%; 
+    flex-shrink: 0;
+    margin: 0px 20px 0px 0px;
+}
+
+
+.dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: #717171;
+}
+
+.hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.image-wrapper:hover .hover-image {
+    display: block; 
+    max-width: auto;
+    max-height: 350px; 
+}
+
+.content-card3 {
+
+    max-width: 440px;
+    max-height: auto; 
+    display: flex;
+    flex-direction: column; 
+    flex: 1;
+    min-width: 0;
+    flex-wrap: wrap;
+    font-size: 12px;
+}
+
+
+.front-picture-card-3 {
+    /* border: 1px solid black; */
+    max-width: 480px;
+    max-height: 400px; 
+    gap: 20px;
+    display: flex;
+    margin: 0px 5px 0px 9px;
+    max-width: 100%; 
+    flex-shrink: 0;
+    flex-wrap: wrap;
+}
+
+
+.picture-card4 {
+    /* border: 1px solid black; */
+    max-width: 518px;
+    max-height: 518px; 
+    display: flex;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+}
+
+.content-card4 {
+    /* border: 1px solid black; */
+    max-width: 210px;
+    max-height: auto;
+    padding: 0px 10px 0px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: small;
+    background-color: whitesmoke;
+    cursor: pointer; /* Changes cursor to pointer on hover */
+}
+
+.content-card4:hover, .active {
+    background-color: rgb(250, 74, 74); /* Change background color to red on hover */
+    color: white;
+}
+.content-card4:hover h3,
+.content-card4:hover p {
+    color: white;
+}
+
+/* #hover-text {
+    font-size: medium;
+    color: black;
+    background-color: rgb(250, 74, 74);
+    border: 1px solid black;
+    padding: 10px;
+} */
+
+.content-card4 h3, .content-card4 p {
+    transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+
+.content-card5 {
+    /* border: 1px solid black; */
+    max-width: 181px;
+    max-height: auto; 
+    display: flex;
+    flex-direction: column; /* Stack content items vertically */
+    flex: 1;
+    min-width: 0;
+    flex-wrap: wrap;
+    font-size: small;
+    align-items: center;
+    gap: 0px;
+    background-color: white;
+    text-align: center;
+}
+
+.symbol {
+    margin-top: 10px; /* Remove default margin */
+    padding: 15px; /* Remove default padding */
+}
+
+.number {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    font-size: 24px; /* Optional: Adjust font size if needed */
+}
+
+.text {
+    margin: 10px; /* Remove default margin */
+    padding-bottom: 15px; /* Remove default padding */
+    font-size: 14px; /* Optional: Adjust font size if needed */
+}
+
+.content-card5 p, .content-card5 h1 {
+    margin-bottom: 5px; /* Add a small margin between elements */
+}
+
+.content-card5:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.content-card6{
+    /* border: 1px solid black; */
+    max-width: 450px;
+    max-height: auto; 
+    display: flex;
+    flex-direction: column; /* Stack content items vertically */
+    flex: 1;
+    min-width: 0;
+    flex-wrap: wrap;
+    font-size: small;
+    gap: 0px;
+    background-color: white;
+    margin-left: 160px;
+}
+
+.content2-card6 {
+    /* border: 1px solid black; */
+    max-width: 423px;
+    max-height: auto; 
+    display: flex;
+    flex-wrap: wrap;
+    font-size: small;
+    align-content: flex-end;
+    margin-left: 160px;
+}
+
+.logo {
+    max-width: auto;
+    max-height: 201.2px;
+}

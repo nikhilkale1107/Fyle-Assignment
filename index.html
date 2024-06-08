@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fyle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+      <div class="card" style="display: flex; flex-direction: row;">
+        <div class="content-card1">
+           <h3 id="header">AWARD WINNING</h3>
+           <h1 id="title" style="font-size: 40px;">DIGITAL MARKETING AGENCY</h1>
+           <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque vitae ante at elit fringilla ac at purus, Morbi sed lacus nec risus finibus feugiat et fermentum</p>
+           <button id="button">CONTACT US</button>
+        </div>
+        <img src="images/Front_picture.png" alt="Front Picture" class="picture-card1">
+      </div>
+
+      <!-- Modal Structure -->
+<div id="contactModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Talk to us</h3>
+        <form>
+            <div class="form-group">
+                <input type="email" id="email" name="email" required>
+                <label for="email">Work email</label>
+            </div>
+            <div class="name-fields">
+                <div class="form-group">
+                    <input type="text" id="firstName" name="firstName" required>
+                    <label for="firstName">First name</label>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="lastName" name="lastName" required>
+                    <label for="lastName">Last name</label>
+                </div>
+            </div>
+            <div>
+            </div>
+            <div class="checkbox-label">
+                <input type="checkbox" id="agree" name="agree" required >
+                <p style="color: #aba9a9;">I agree to Fyle's terms and conditions, and provide consent to send me communication</p>
+            </div>
+            <button type="submit">Contact Us</button>
+        </form>
+    </div>
+    </div>
+    </div>
+    
+    
+    <div class="container" style="background-color: whitesmoke;">
+        <div class="card" style="display: flex; flex-direction: row; margin-top: 0px; background-color: whitesmoke;"> 
+          <div class="content1-card2">
+            <h3 id="header">WHAT WE DO</h3>
+            <h1 id="title">SERVICES PROVIDE FOR YOU</h1>
+          </div>
+          <p class="content2-card2">Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque vitae ante at elit fringilla ac at purus, Morbi sed lacus nec risus finibus feugiat et fermentum</p>
+          <div class="slider-wrapper">
+                <div class="image-wrapper">
+                   <img src="images/picture_1.png" alt="Front Picture" class="picture-card2">
+                   <img src="images/picture_display.png" alt="Hover Picture" class="hover-image">
+                </div>
+                <div class="image-wrapper">
+                   <img src="images/picture_2.png" alt="Front Picture" class="picture-card2">
+                   <img src="images/picture_display.png" alt="Hover Picture" class="hover-image">
+                </div> 
+                <div class="image-wrapper" style="margin-right: 0px;">
+                   <img src="images/picture_3.png" alt="Front Picture" class="picture-card2" style="margin: 0px;">
+                   <img src="images/picture_display.png" alt="Hover Picture" class="hover-image">
+                </div>
+            </div>
+          </div>
+    </div>
+    
+
+    <div class="container">
+        <div class="card">
+          <h3 id="header" style="text-align: center;">WHY CHOOSE US</h3>
+          <div>
+            <h1 id="title" style="text-align: center;">WHY WE ARE BEST</h1>
+          </div>
+          <div style="display: flex;">
+            <div>
+                <img src="images/target.png" alt="Target" class="symbol3">
+                <p>Clarified Vision & Target</p>
+                <p class="content-card3">Lorem ipsum dolor sit amet consectetur sadipisicing elitr, sed diam nonumy.</p>
+            </div>
+            <div>
+                <img src="images/performance.png" alt="Performance" class="symbol3">
+                <p>High Performance</p>
+                <p class="content-card3">Lorem ipsum dolor sit amet consectetur sadipisicing elitr, sed diam nonumy.</p>
+            </div>
+            <div>
+                <img src="images/security.png" alt="Target" class="symbol3">
+                <p>Maintain Security</p>
+                <p class="content-card3">Lorem ipsum dolor sit amet consectetur sadipisicing elitr, sed diam nonumy.</p>
+            </div>
+            <div>
+                <img src="images/quality.png" alt="Target" class="symbol3">
+                <p>Better Strategy & Quality</p>
+                <p class="content-card3">Lorem ipsum dolor sit amet consectetur sadipisicing elitr, sed diam nonumy.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+         
+    <div class="container">
+        <div class="card" style="margin-top: 0px;">
+            <div>
+                <h3 id="header" style="text-align: center;">OUR PROJECT</h3>
+                <h1 id="title" style="text-align: center;">WHY WE ARE BEST</h1>
+            </div>
+            <div style="display: flex; flex-direction: row; gap: 11px;">
+                <div>
+                    <img id="main-image" src="images/project_2.png" alt="Front Picture" class="picture-card4">
+                </div>
+                <div>
+                    <div class="content-card4" data-image="images/project_1.jpg">
+                        <h3>Genderless Kei - Japan's Hot</h3>
+                        <p>set to launch on the manufacturer's new A330neo aircraft in 2017, it's offering lots of</p>
+                    </div>
+                    <div class="content-card4" data-image="images/project_2.png">
+                        <h3>Better Strategy & Quality</h3>
+                        <p>set to launch on the manufacturer's new A330neo aircraft in 2017, it's offering lots of</p>
+                    </div>
+                    <div class="content-card4" data-image="images/project_3.jpg">
+                        <h3>Genderless Kei - Japan's Hot</h3>
+                        <p>set to launch on the manufacturer's new A330neo aircraft in 2017, it's offering lots of</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <div class="container" style="background-color: whitesmoke;">
+        <div class="card" style="padding-top: 40px;">
+            <h3 id="header" style="text-align: center;">EXPERTS GROWTH</h3>
+            <h1 id="title" style="text-align: center;">OUR COMPANY GROWTH</h1>
+            <div style="display: flex; gap: 13px;">
+                <div class="content-card5">
+                    <img src="images/heart.png" alt="Heart" class="symbol">
+                    <h1 class="number">199 +</h1>
+                    <p class="text">Satisfied Customer</p>
+                </div>
+                <div class="content-card5">
+                    <img src="images/time.png" alt="Trophy" class="symbol">
+                    <h1 class="number">1591 +</h1>
+                    <p class="text">Days Of Operation</p>
+                </div>
+                <div class="content-card5">
+                    <img src="images/check_mark.png" alt="Check_Mark" class="symbol">
+                    <h1 class="number">283 +</h1>
+                    <p class="text">Complete Project</p>
+                </div>
+                <div class="content-card5">
+                    <img src="images/trophy.png" alt="Check_Mark" class="symbol">
+                    <h1 class="number">75 +</h1>
+                    <p class="text">Win Awards</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="card">
+            <h3 id="header" style="text-align: center;">CLIENT'S FEEDBACK</h3>
+            <h1 id="title" style="text-align: center;">PEOPLE SAY'S ABOUT US</h1>
+            <div class="content-card6">
+                <p>Jannat Tumpa The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections Bonorum et Malorum original.</p>
+            </div>
+            <div class="content2-card6">
+                <p style="color: rgb(250, 74, 74); font-weight: bold;">JANNAT TUMPA</p>
+                <p>&nbsp;- COO, AMERIMAR ENTERPRISES, INC.</p>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <img src="images/logos.png" alt="Logo" class="logo">
+    </div>
+</body>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+</html>
